@@ -1,0 +1,52 @@
+site_name: monzo-api-wrapper
+repo_url: https://github.com/eliasbenaddou/monzo-api-wrapper
+site_url: https://eliasbenaddou.github.io/monzo-api-wrapper
+site_description: Wrapper for monzo-api package to fetch Monzo transactions and store them in a database.
+site_author: Elias Benaddou Idrissi
+edit_uri: edit/main/docs/
+repo_name: eliasbenaddou/monzo-api-wrapper
+copyright: Maintained by <a href="https://eliasbenaddou.com">eliasbenaddou</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [monzo_api_wrapper]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/eliasbenaddou/monzo-api-wrapper
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/monzo-api-wrapper
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
