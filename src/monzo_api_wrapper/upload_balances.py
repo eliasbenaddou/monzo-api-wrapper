@@ -1,3 +1,5 @@
+from typing import Any
+
 import numpy as np
 import pandas as pd
 
@@ -70,7 +72,7 @@ def get_new_balances(database: Db, table_name: str, current_balances: pd.DataFra
 @loggable
 def get_changed_balances(
     database: Db, table_name: str, current_balances: pd.DataFrame
-) -> pd.DataFrame:
+) -> pd.DataFrame | Any:
     """Identify balances that have changed compared to the ones in the database.
 
     Args:
