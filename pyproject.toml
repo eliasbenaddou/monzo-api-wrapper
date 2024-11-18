@@ -1,6 +1,6 @@
 [project]
 name = "monzo_api_wrapper"
-version = "0.1.0"
+version = "0.1.1"
 description = "Wrapper for monzo-api package to fetch Monzo transactions and store them in a database."
 authors = [{ name = "Elias Benaddou Idrissi", email = "e.benaddou@hey.com" }]
 readme = "README.md"
