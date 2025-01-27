@@ -61,7 +61,7 @@ class Db:
         database_type = os.getenv("DB_TYPE")
         database_name = os.getenv("DB_NAME")
         port = os.getenv("DB_PORT")
-        sql_string = f"{database_type}://{username}:{password}@{host}:{port}/{database_name}"
+        sql_string = f"{database_type}://{username}:{password}@{host}:{port}/{database_name}?gssencmode=disable"
         return create_engine(sql_string)
 
     def query(self, sql: str, return_data: bool = True) -> Optional[pd.DataFrame]:
